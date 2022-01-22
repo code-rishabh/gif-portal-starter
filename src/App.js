@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import zenitsu from "./zenitsu.png"
 import kp from './keypair.json'
 import twitterLogo from './assets/twitter-logo.svg';
 import idl from './idl.json';
@@ -232,7 +233,9 @@ const App = () => {
       {/* STYLING */}
       <div className={walletAddress ? 'authed-container' : 'container'}>
         <div className="header-container">
-          <p className="header">🖼 Zenitsu Agatsuma</p>
+        <img className="zenitsu" src={zenitsu} alt="" /> 
+          <p className="header" >
+            Zenitsu Agatsuma</p>
           <p className="sub-text">
             Okay! Let's have a look at some of the savage moves by Zenitsu ✨ ✨
           </p>
